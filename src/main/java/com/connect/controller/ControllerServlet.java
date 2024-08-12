@@ -51,6 +51,7 @@ public class ControllerServlet extends HttpServlet {
 		if (requestURI.endsWith("layout")) {
 			rd = request.getRequestDispatcher("../layout.html");
 			rd.forward(request, response);
+			return;
 		}
 		
 		if (requestURI.endsWith("addform")) {
